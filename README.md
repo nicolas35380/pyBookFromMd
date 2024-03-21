@@ -13,8 +13,15 @@ Génération de livres, documentation ou ebook à partir de fichiers Markdown li
 
 ## Pré requis
 
-``Pandoc`` doit être installé et déclaré dans le PATH.
+- [Pandoc](https://pandoc.org/) doit être installé et déclaré dans le PATH.
+- [LaTeX](https://en.wikibooks.org/wiki/LaTeX/Installation#Distributions) doit être installé.
+- Le template [Eisvogel](https://github.com/Wandmalfarbe/pandoc-latex-template) doit être installé.
 
 ## Historique des versions
 
-v1.0.0 : Publication initiale en ligne de commande. Paramétrage depuis les constantes dans ``main.py``. Utilisation d'un fichier d'entrée ``files.txt``.
+``v1.0.0`` : Publication initiale en ligne de commande. Paramétrage depuis les constantes dans ``main.py``. Utilisation d'un fichier d'entrée ``files.txt``.
+
+## Todo
+
+- [ ] Interface graphique tout en un pour execution simple et portable. (*en cours*)
+- [ ] Dockerisation avec tout les pré requis pour accès externe.
