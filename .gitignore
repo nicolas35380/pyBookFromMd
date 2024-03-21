@@ -3,8 +3,9 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
-# Markdown exemple files
+# Markdown exemple files and PDF output
 *.md
+*.pdf
 
 # User-specific files
 *.rsuser
