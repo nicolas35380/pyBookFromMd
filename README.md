@@ -14,3 +14,7 @@ Génération de livres, documentation ou ebook à partir de fichiers Markdown li
 ## Pré requis
 
 ``Pandoc`` doit être installé et déclaré dans le PATH.
+
+## Historique des versions
+
+v1.0.0 : Publication initiale en ligne de commande. Paramétrage depuis les constantes dans ``main.py``. Utilisation d'un fichier d'entrée ``files.txt``.
