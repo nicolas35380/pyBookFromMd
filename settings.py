@@ -30,5 +30,14 @@ METADATA_SUBJECT = "L'algorithmique est un pilier fondamental pour tout dévelop
 METADATA_SUBTITLE = "Créer, analyser et améliorer des algorithmes sophistiqués"
 METADATA_DATE = "2023-2024"
 
+## Header and Footer things
+HEADER_RIGHT = "header-right"
+HEADER_CENTER = "header-center"
+HEADER_LEFT = "header-left"
+
+FOOTER_RIGHT = "footer-right"
+FOOTER_CENTER = "footer-center"
+FOOTER_LEFT = "footer-left"
+
 ## Listing Options
 LISTING_NO_PAGE_BREAK = "true"          # avoid page break inside listings, defaults to false (seems to be KO)
