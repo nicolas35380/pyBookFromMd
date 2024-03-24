@@ -23,5 +23,5 @@ Génération de livres, documentation ou ebook à partir de fichiers Markdown li
 
 ## Todo
 
-- [ ] Interface graphique tout en un pour execution simple et portable. (*en cours*)
-- [ ] Dockerisation avec tout les pré requis pour accès externe.
+- [ ] Interface graphique tout en un pour execution simple et portable. (*en cours*). [Pour référence](https://pypi.org/project/pypandoc/).
+- [ ] Dockerisation avec tout les pré requis pour accès externe. [Pour référence](https://github.com/dalibo/pandocker).
