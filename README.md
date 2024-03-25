@@ -28,4 +28,4 @@ Génération de livres, documentation ou ebook à partir de fichiers Markdown li
 ## Todo
 
 - [ ] Évaluation l'intérêt de pypandoc pour le projet. (*en cours*)  [Pour référence](https://pypi.org/project/pypandoc/).
-- [ ] Dockerisation avec tout les pré requis pour accès externe.
+- [ ] Dockerisation avec tout les pré requis pour accès externe. [Pour référence](https://github.com/dalibo/pandocker).
