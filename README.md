@@ -29,6 +29,6 @@ Génération de livres, documentation ou ebook à partir de fichiers Markdown li
 
 ## Todo
 
-- [-] Transformer ``settings.py`` en fichier de paramétrage externe en vue de distribuer un package ``*.exe``. (*en cours*)
+- [ ] Transformer ``settings.py`` en fichier de paramétrage externe en vue de distribuer un package ``*.exe``. (*en cours*)
 - [ ] Évaluation l'intérêt de pypandoc pour le projet. [Pour référence](https://pypi.org/project/pypandoc/).
 - [ ] Dockerisation avec tout les pré requis pour accès externe. [Pour référence](https://github.com/dalibo/pandocker).
