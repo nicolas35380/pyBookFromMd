@@ -9,6 +9,7 @@ TOC_DEPTH = 2                           # depth of table of content
 TOP_LEVEL_DIVISION = "chapter"          # part, chapter
 CLASSOPTION = "oneside"                 # "oneside" for PDF, "" if printed
 HIGHLIGHT_STYLE = "tango"               # 
+MERMAID_SUPPORT = False                  # True if Mermaid enabled, False if disabled (default)
 
 ## Title Page Options
 TITLEPAGE_LOGO = ""            # path to an image that will be displayed on the title page, relative path only

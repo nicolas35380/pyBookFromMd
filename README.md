@@ -9,6 +9,7 @@ Génération de livres, documentation ou ebook à partir de fichiers Markdown li
 - [Pandoc](https://pandoc.org/) doit être installé et déclaré dans le PATH.
 - [LaTeX](https://en.wikibooks.org/wiki/LaTeX/Installation#Distributions) doit être installé.
 - Le template [Eisvogel](https://github.com/Wandmalfarbe/pandoc-latex-template) doit être installé.
+- **[optionnel]** [Support Mermaid](https://github.com/raghur/mermaid-filter) : au besoin, installer le filtre Pandoc ``mermaid-filter`` avec la commande ``npm install --global mermaid-filter``. Enfin, dans ``setting.py`` : activer le support Mermaid en basculant ``MERMAID_SUPPORT`` à ``True``.
 
 ## Mode d'emploi
 
@@ -19,13 +20,15 @@ Génération de livres, documentation ou ebook à partir de fichiers Markdown li
 
 ## Historique des versions
 
+- ``v1.2.0`` : Ajout du support de Mermaid avec ``mermaid-filter``.
 - ``v1.1.0`` : Ajoute le support des Headers et Footers personnalisés. Légère refactorisation : séparation en plusieurs fichiers
-  - **main.py** : fichier principal à execturer.
+  - **main.py** : fichier principal à executer.
   - **function.py** : définition des fonctions aditionnelles comme la lecture du fichier d'entrées et la fabriction de la ligne de commande de Pandoc.
   - **settings.py** : fichier de paramétrage. A modifier pour personnaliser le rendu.
 - ``v1.0.0`` : Publication initiale en ligne de commande. Paramétrage depuis les constantes dans ``main.py``. Utilisation d'un fichier d'entrée ``files.txt``.
 
 ## Todo
 
-- [ ] Évaluation l'intérêt de pypandoc pour le projet. (*en cours*)  [Pour référence](https://pypi.org/project/pypandoc/).
+- [-] Transformer ``settings.py`` en fichier de paramétrage externe en vue de distribuer un package ``*.exe``. (*en cours*)
+- [ ] Évaluation l'intérêt de pypandoc pour le projet. [Pour référence](https://pypi.org/project/pypandoc/).
 - [ ] Dockerisation avec tout les pré requis pour accès externe. [Pour référence](https://github.com/dalibo/pandocker).
