@@ -12,16 +12,20 @@ Génération de livres, documentation ou ebook à partir de fichiers Markdown li
 
 ## Mode d'emploi
 
-1. Dans l'idéal, préfixer les fichiers *.md correspondants aux chapitre dans l'ordre de lecture : ``01-lorem``, ``02-ipsum``, etc. et les déposer dans le même répertoire que ``main.py``.
+1. Dans l'idéal, préfixer les fichiers *.md correspondants aux chapitre dans l'ordre de lecture : ``01-lorem``, ``02-ipsum``, etc. et les déposer dans le même répertoire que les fichiers ``*.py``.
 2. En bash, faire un ``ls *.md > files.txt`` pour générer le fichier d'entrée.
-3. Dans le fichier ``main.py``, modifier les constantes définies en début de programme pour personnaliser le rendu.
+3. Dans le fichier ``settings.py``, modifier les constantes définies en début de programme pour personnaliser le rendu.
 4. Si le document contient différentes parties principales, intégrer les balises tex ``\part{Première partie : Lorem Ipsum}`` en début de fichier ``*.md`` de nouvelle partie.
 
 ## Historique des versions
 
-``v1.0.0`` : Publication initiale en ligne de commande. Paramétrage depuis les constantes dans ``main.py``. Utilisation d'un fichier d'entrée ``files.txt``.
+- ``v1.1.0`` : Ajoute le support des Headers et Footers personnalisés. Légère refactorisation : séparation en plusieurs fichiers
+  - **main.py** : fichier principal à execturer.
+  - **function.py** : définition des fonctions aditionnelles comme la lecture du fichier d'entrées et la fabriction de la ligne de commande de Pandoc.
+  - **settings.py** : fichier de paramétrage. A modifier pour personnaliser le rendu.
+- ``v1.0.0`` : Publication initiale en ligne de commande. Paramétrage depuis les constantes dans ``main.py``. Utilisation d'un fichier d'entrée ``files.txt``.
 
 ## Todo
 
-- [ ] Interface graphique tout en un pour execution simple et portable. (*en cours*). [Pour référence](https://pypi.org/project/pypandoc/).
-- [ ] Dockerisation avec tout les pré requis pour accès externe. [Pour référence](https://github.com/dalibo/pandocker).
+- [ ] Évaluation l'intérêt de pypandoc pour le projet. (*en cours*)  [Pour référence](https://pypi.org/project/pypandoc/).
+- [ ] Dockerisation avec tout les pré requis pour accès externe.
