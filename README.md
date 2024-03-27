@@ -15,7 +15,7 @@ Génération de livres, documentation ou ebook à partir de fichiers Markdown li
 
 1. Dans l'idéal, préfixer les fichiers *.md correspondants aux chapitre dans l'ordre de lecture : ``01-lorem``, ``02-ipsum``, etc. et les déposer dans le même répertoire que les fichiers ``*.py``.
 2. En bash, faire un ``ls *.md > files.txt`` pour générer le fichier d'entrée.
-3. Dans le fichier ``settings.py``, modifier les constantes définies en début de programme pour personnaliser le rendu.
+3. Dans le fichier ``config.ini``, modifier les paramètres de génération pour personnaliser le rendu.
 4. Si le document contient différentes parties principales, intégrer les balises tex ``\part{Première partie : Lorem Ipsum}`` en début de fichier ``*.md`` de nouvelle partie.
 
 ## Historique des versions
