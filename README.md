@@ -20,6 +20,7 @@ Génération de livres, documentation ou ebook à partir de fichiers Markdown li
 
 ## Historique des versions
 
+- ``v1.3.0`` : Passage des paramètres via fichier .INI pour packaging de la solution. Suppression de ``settings.py``.
 - ``v1.2.0`` : Ajout du support de Mermaid avec ``mermaid-filter``.
 - ``v1.1.0`` : Ajoute le support des Headers et Footers personnalisés. Légère refactorisation : séparation en plusieurs fichiers
   - **main.py** : fichier principal à executer.
