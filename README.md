@@ -13,10 +13,26 @@ Génération de livres, documentation ou ebook à partir de fichiers Markdown li
 
 ## Mode d'emploi
 
-1. Dans l'idéal, préfixer les fichiers *.md correspondants aux chapitre dans l'ordre de lecture : ``01-lorem``, ``02-ipsum``, etc. et les déposer dans le même répertoire que les fichiers ``*.py``.
-2. En bash, faire un ``ls *.md > files.txt`` pour générer le fichier d'entrée.
-3. Dans le fichier ``config.ini``, modifier les paramètres de génération pour personnaliser le rendu.
-4. Si le document contient différentes parties principales, intégrer les balises tex ``\part{Première partie : Lorem Ipsum}`` en début de fichier ``*.md`` de nouvelle partie.
+### Avec l'executable prêt à l'emploi
+
+1. Téléchargez et dézippez l'archive ``pyBookFromMd.zip`` dans le répertoire de votre choix.
+2. Dans l'idéal, préfixez les fichiers *.md correspondants aux chapitres dans l'ordre de lecture : ``01-lorem``, ``02-ipsum``, etc. et déposez dans le même répertoire que l'exécutable ``pyBookFromMd.exe``.
+3. En bash, faites un ``ls *.md > files.txt`` pour générer le fichier d'entrée.
+4. Dans le fichier ``config.ini``, modifiez les paramètres de génération pour personnaliser le rendu.
+5. Si le document contient différentes parties principales, intégrer les balises TEX ``\part{Première partie : Lorem Ipsum}`` en début de fichier ``*.md`` de nouvelle partie.
+6. Assurez-vous que les fichiers ``config.ini``, ``files.txt`` et éventuellement votre illustration de couverture (ou à défaut ``title-background.png``) soient bien présents dans le même répertoire que votre exécutable.
+7. Éxecutez ``pyBookFromMd.exe``.
+8. Ouvrez le PDF généré.
+
+### Depuis les sources
+
+1. Clonez le dépôt ou téléchargez l'archive contenant les sources et dézippez dans le répertoire de votre choix.
+2. Dans l'idéal, préfixez les fichiers *.md correspondants aux chapitres dans l'ordre de lecture : ``01-lorem``, ``02-ipsum``, etc. et déposez les dans le même répertoire que les fichiers ``*.py``.
+3. En bash, faites un ``ls *.md > files.txt`` pour générer le fichier d'entrée.
+4. Dans le fichier ``config.ini``, modifiez les paramètres de génération pour personnaliser le rendu.
+5. Si le document contient différentes parties principales, intégrer les balises TEX ``\part{Première partie : Lorem Ipsum}`` en début de fichier ``*.md`` de nouvelle partie.
+6. Lancez main.py avec la commande ``python -m main.py``.
+7. Ouvrez le PDF généré.
 
 ## Historique des versions
 
