@@ -9,7 +9,7 @@ Génération de livres, documentation ou ebook à partir de fichiers Markdown li
 - [Pandoc](https://pandoc.org/) doit être installé et déclaré dans le PATH.
 - [LaTeX](https://en.wikibooks.org/wiki/LaTeX/Installation#Distributions) doit être installé.
 - Le template [Eisvogel](https://github.com/Wandmalfarbe/pandoc-latex-template) doit être installé.
-- **[optionnel]** [Support Mermaid](https://github.com/raghur/mermaid-filter) : au besoin, installer le filtre Pandoc ``mermaid-filter`` avec la commande ``npm install --global mermaid-filter``. Enfin, dans ``setting.py`` : activer le support Mermaid en basculant ``MERMAID_SUPPORT`` à ``True``.
+- **[optionnel]** [Support Mermaid](https://github.com/raghur/mermaid-filter) : au besoin, installer le filtre Pandoc ``mermaid-filter`` avec la commande ``npm install --global mermaid-filter``. Enfin, dans ``config.ini`` : activer le support Mermaid en basculant ``MERMAID_SUPPORT`` à ``True``.
 
 ## Mode d'emploi
 
@@ -46,6 +46,6 @@ Génération de livres, documentation ou ebook à partir de fichiers Markdown li
 
 ## Todo
 
-- [ ] Transformer ``settings.py`` en fichier de paramétrage externe en vue de distribuer un package ``*.exe``. (*en cours*)
-- [ ] Évaluation l'intérêt de pypandoc pour le projet. [Pour référence](https://pypi.org/project/pypandoc/).
+- [x] Transformer ``settings.py`` en fichier de paramétrage externe en vue de distribuer un package ``*.exe``.
+- [x] Évaluation l'intérêt de pypandoc pour le projet. [Pour référence](https://pypi.org/project/pypandoc/). Non pertinent.
 - [ ] Dockerisation avec tout les pré requis pour accès externe. [Pour référence](https://github.com/dalibo/pandocker).
